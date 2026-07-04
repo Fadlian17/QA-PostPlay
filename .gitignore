@@ -1,0 +1,12 @@
+node_modules/
+.playwright/
+playwright-report/
+results.json
+.env
+tsconfog.json
+package-lock.json
+package.json
+pm-results/
+test-results/
+
+
