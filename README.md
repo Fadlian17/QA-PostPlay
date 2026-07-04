@@ -54,19 +54,19 @@ npm install -g postman-cli
 
 ## Environment variables
 
-File `.env` yang sudah ada berisi contoh konfigurasi:
+File `.env` berisi konfigurasi yang diperlukan untuk test dan integrasi Postman. Jangan commit atau share file `.env` ke repository.
 
-```env
-BASE_URL=http://localhost:3000
-API_BASE_URL=http://localhost:3001
-TEST_USER_EMAIL=testuser@example.com
-TEST_USER_PASSWORD=TestPassword123!
-TEST_ADMIN_EMAIL=admin@example.com
-TEST_ADMIN_PASSWORD=AdminPassword123!
-POSTMAN_API_KEY=your_postman_api_key_here
-```
+Variabel yang diperlukan:
 
-Sesuaikan nilai di atas untuk environment lokal atau CI.
+- `BASE_URL` — Base URL aplikasi
+- `API_BASE_URL` — Base URL API
+- `TEST_USER_EMAIL` — Email user test
+- `TEST_USER_PASSWORD` — Password user test
+- `TEST_ADMIN_EMAIL` — Email admin test
+- `TEST_ADMIN_PASSWORD` — Password admin test
+- `POSTMAN_API_KEY` — API key Postman untuk integration
+
+Jangan push `.env` atau file yang berisi credentials ke repository. Gunakan `.env.example` atau dokumentasi setup lokal untuk referensi.
 
 ## Skrip npm yang tersedia
 
